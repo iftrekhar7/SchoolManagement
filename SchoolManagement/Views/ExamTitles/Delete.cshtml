@@ -1,0 +1,44 @@
+﻿@model SchoolManagement.Models.Entity.ExamTitle
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="page-header">
+    <h1>
+        Are you sure you want to delete this?
+        <small>
+            <i class="ace-icon fa fa-angle-double-right"></i>
+            @Html.ActionLink("Back to List", "Index")
+        </small>
+    </h1>
+</div>
+<div>
+    
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.EducationLevel.EducationLevelNaame)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EducationLevel.EducationLevelNaame)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TitleName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TitleName)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" />
+        </div>
+    }
+</div>

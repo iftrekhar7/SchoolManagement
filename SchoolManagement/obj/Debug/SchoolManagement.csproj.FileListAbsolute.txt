@@ -1,0 +1,149 @@
+c:\users\segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\bin\SchoolManagement.dll.config
+c:\users\segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\bin\SchoolManagement.dll
+c:\users\segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\bin\SchoolManagement.pdb
+c:\users\segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\bin\Antlr3.Runtime.dll
+c:\users\segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\bin\EntityFramework.dll
+c:\users\segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\bin\EntityFramework.SqlServer.dll
+c:\users\segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\bin\Microsoft.Owin.dll
+c:\users\segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\bin\Microsoft.Owin.Security.dll
+c:\users\segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\bin\Microsoft.Owin.Security.Google.dll
+c:\users\segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\bin\Microsoft.Web.Infrastructure.dll
+c:\users\segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\bin\Newtonsoft.Json.dll
+c:\users\segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\bin\Owin.dll
+c:\users\segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\bin\System.Web.Helpers.dll
+c:\users\segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\bin\System.Web.Mvc.dll
+c:\users\segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\bin\System.Web.Optimization.dll
+c:\users\segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\bin\System.Web.Razor.dll
+c:\users\segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\bin\System.Web.WebPages.Deployment.dll
+c:\users\segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\bin\System.Web.WebPages.dll
+c:\users\segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\bin\System.Web.WebPages.Razor.dll
+c:\users\segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\bin\WebGrease.dll
+c:\users\segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\bin\System.Web.Helpers.xml
+c:\users\segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\bin\System.Web.Mvc.xml
+c:\users\segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\bin\System.Web.Optimization.xml
+c:\users\segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\bin\System.Web.Razor.xml
+c:\users\segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\bin\System.Web.WebPages.xml
+c:\users\segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\bin\System.Web.WebPages.Deployment.xml
+c:\users\segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\bin\System.Web.WebPages.Razor.xml
+c:\users\segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\bin\Antlr3.Runtime.pdb
+c:\users\segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\bin\Newtonsoft.Json.xml
+c:\users\segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\bin\EntityFramework.xml
+c:\users\segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\bin\EntityFramework.SqlServer.xml
+c:\users\segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\bin\Microsoft.Owin.xml
+c:\users\segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\bin\Microsoft.Owin.Security.xml
+c:\users\segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\bin\Microsoft.Owin.Security.Google.xml
+c:\users\segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.dll
+c:\users\segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.pdb
+C:\Users\Segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Migrations.add_Guardian_Student.resources
+C:\Users\Segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.csproj.GenerateResource.Cache
+C:\Users\Segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Migrations.add_AdmissionAndOthers.resources
+C:\Users\Segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Migrations.add_ExamMarks_Course_Class.resources
+C:\Users\Segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Migrations.AddClassName.resources
+C:\Users\Segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Migrations.add_AssignRoll.resources
+C:\Users\Segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Migrations.add.resources
+C:\Users\Segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Migrations.addSessionInAssignRoll.resources
+C:\Users\Segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Migrations.changeExamMark.resources
+C:\Users\Segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Migrations.changeCourse.resources
+C:\Users\Segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Migrations.Change.resources
+C:\Users\Segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Migrations.AddEmployee.resources
+C:\Users\Segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Migrations.AddEmployeeEducation.resources
+C:\Users\Segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Migrations.AddEmploymentHistory.resources
+C:\Users\Segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Migrations.AddJobInfo.resources
+C:\Users\Segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Migrations.addMarks_EmployeeEducation.resources
+C:\Users\Segasoftbd120\documents\visual studio 2013\Projects\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Migrations.classFee.resources
+C:\Users\Segasoftbd120\Documents\Visual Studio 2013\Projects\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Migrations.addAccount.resources
+C:\Users\Segasoftbd120\Documents\Visual Studio 2013\Projects\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.csprojResolveAssemblyReference.cache
+C:\Users\Segasoftbd120\Documents\Visual Studio 2013\Projects\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Migrations.addDefaultSetting.resources
+D:\SchoolManagement\SchoolManagement\bin\SchoolManagement.dll.config
+D:\SchoolManagement\SchoolManagement\bin\SchoolManagement.dll
+D:\SchoolManagement\SchoolManagement\bin\SchoolManagement.pdb
+D:\SchoolManagement\SchoolManagement\bin\Antlr3.Runtime.dll
+D:\SchoolManagement\SchoolManagement\bin\EntityFramework.dll
+D:\SchoolManagement\SchoolManagement\bin\EntityFramework.SqlServer.dll
+D:\SchoolManagement\SchoolManagement\bin\Microsoft.AspNet.Identity.Core.dll
+D:\SchoolManagement\SchoolManagement\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\SchoolManagement\SchoolManagement\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\SchoolManagement\SchoolManagement\bin\Microsoft.Owin.dll
+D:\SchoolManagement\SchoolManagement\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\SchoolManagement\SchoolManagement\bin\Microsoft.Owin.Security.Cookies.dll
+D:\SchoolManagement\SchoolManagement\bin\Microsoft.Owin.Security.dll
+D:\SchoolManagement\SchoolManagement\bin\Microsoft.Owin.Security.Facebook.dll
+D:\SchoolManagement\SchoolManagement\bin\Microsoft.Owin.Security.Google.dll
+D:\SchoolManagement\SchoolManagement\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\SchoolManagement\SchoolManagement\bin\Microsoft.Owin.Security.OAuth.dll
+D:\SchoolManagement\SchoolManagement\bin\Microsoft.Owin.Security.Twitter.dll
+D:\SchoolManagement\SchoolManagement\bin\Microsoft.Web.Infrastructure.dll
+D:\SchoolManagement\SchoolManagement\bin\Newtonsoft.Json.dll
+D:\SchoolManagement\SchoolManagement\bin\Owin.dll
+D:\SchoolManagement\SchoolManagement\bin\System.Web.Helpers.dll
+D:\SchoolManagement\SchoolManagement\bin\System.Web.Mvc.dll
+D:\SchoolManagement\SchoolManagement\bin\System.Web.Optimization.dll
+D:\SchoolManagement\SchoolManagement\bin\System.Web.Razor.dll
+D:\SchoolManagement\SchoolManagement\bin\System.Web.WebPages.Deployment.dll
+D:\SchoolManagement\SchoolManagement\bin\System.Web.WebPages.dll
+D:\SchoolManagement\SchoolManagement\bin\System.Web.WebPages.Razor.dll
+D:\SchoolManagement\SchoolManagement\bin\WebGrease.dll
+D:\SchoolManagement\SchoolManagement\bin\System.Web.Helpers.xml
+D:\SchoolManagement\SchoolManagement\bin\System.Web.Mvc.xml
+D:\SchoolManagement\SchoolManagement\bin\System.Web.Optimization.xml
+D:\SchoolManagement\SchoolManagement\bin\System.Web.Razor.xml
+D:\SchoolManagement\SchoolManagement\bin\System.Web.WebPages.xml
+D:\SchoolManagement\SchoolManagement\bin\System.Web.WebPages.Deployment.xml
+D:\SchoolManagement\SchoolManagement\bin\System.Web.WebPages.Razor.xml
+D:\SchoolManagement\SchoolManagement\bin\Antlr3.Runtime.pdb
+D:\SchoolManagement\SchoolManagement\bin\Newtonsoft.Json.xml
+D:\SchoolManagement\SchoolManagement\bin\EntityFramework.xml
+D:\SchoolManagement\SchoolManagement\bin\EntityFramework.SqlServer.xml
+D:\SchoolManagement\SchoolManagement\bin\Microsoft.AspNet.Identity.Core.xml
+D:\SchoolManagement\SchoolManagement\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\SchoolManagement\SchoolManagement\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\SchoolManagement\SchoolManagement\bin\Microsoft.Owin.xml
+D:\SchoolManagement\SchoolManagement\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\SchoolManagement\SchoolManagement\bin\Microsoft.Owin.Security.xml
+D:\SchoolManagement\SchoolManagement\bin\Microsoft.Owin.Security.Facebook.xml
+D:\SchoolManagement\SchoolManagement\bin\Microsoft.Owin.Security.Cookies.xml
+D:\SchoolManagement\SchoolManagement\bin\Microsoft.Owin.Security.OAuth.xml
+D:\SchoolManagement\SchoolManagement\bin\Microsoft.Owin.Security.Google.xml
+D:\SchoolManagement\SchoolManagement\bin\Microsoft.Owin.Security.Twitter.xml
+D:\SchoolManagement\SchoolManagement\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Migrations.add_Guardian_Student.resources
+D:\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Migrations.add_AdmissionAndOthers.resources
+D:\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Migrations.add_ExamMarks_Course_Class.resources
+D:\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Migrations.AddClassName.resources
+D:\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Migrations.add_AssignRoll.resources
+D:\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Migrations.add.resources
+D:\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Migrations.addSessionInAssignRoll.resources
+D:\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Migrations.changeExamMark.resources
+D:\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Migrations.changeCourse.resources
+D:\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Migrations.Change.resources
+D:\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Migrations.AddEmployee.resources
+D:\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Migrations.AddEmployeeEducation.resources
+D:\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Migrations.AddEmploymentHistory.resources
+D:\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Migrations.AddJobInfo.resources
+D:\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Migrations.addMarks_EmployeeEducation.resources
+D:\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Migrations.classFee.resources
+D:\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Migrations.addAccount.resources
+D:\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Migrations.addDefaultSetting.resources
+D:\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.csproj.GenerateResource.Cache
+D:\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.dll
+D:\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.pdb
+D:\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Migrations.addSchool.resources
+D:\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.csprojResolveAssemblyReference.cache

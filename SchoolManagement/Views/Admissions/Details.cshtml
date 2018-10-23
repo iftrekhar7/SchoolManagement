@@ -1,0 +1,63 @@
+﻿@model SchoolManagement.Models.Entity.Admission
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Admission</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Student.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Student.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AdmissionDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AdmissionDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Session)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Session)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PreviousSchool)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PreviousSchool)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PreviousSchoolAddrs)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PreviousSchoolAddrs)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PreviousSchoolDocument)
+        </dt>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

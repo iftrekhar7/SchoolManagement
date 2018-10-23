@@ -1,0 +1,38 @@
+﻿@model SchoolManagement.Models.Entity.ExamTitle
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="page-header">
+    <h1>
+        Details of a Session
+        <small>
+            <i class="ace-icon fa fa-angle-double-right"></i>
+            @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+            @Html.ActionLink("Back to List", "Index")
+        </small>
+    </h1>
+</div>
+
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.EducationLevel.EducationLevelNaame)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EducationLevel.EducationLevelNaame)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TitleName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TitleName)
+        </dd>
+
+    </dl>
+</div>

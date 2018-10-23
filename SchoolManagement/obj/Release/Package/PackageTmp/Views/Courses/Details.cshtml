@@ -1,0 +1,78 @@
+﻿@model SchoolManagement.Models.Entity.Course
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="page-header">
+    <h1>
+        Courses Details
+        <small>
+            <i class="ace-icon fa fa-angle-double-right"></i>
+            @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+            @Html.ActionLink("Back to List", "Index")
+        </small>
+    </h1>
+</div>
+
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ClassName.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ClassName.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Code)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Code)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Theory)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Theory)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Mcq)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Mcq)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Practical)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Practical)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Total)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Total)
+        </dd>
+
+    </dl>
+</div>

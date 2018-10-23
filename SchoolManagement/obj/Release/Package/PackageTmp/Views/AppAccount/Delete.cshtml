@@ -1,0 +1,69 @@
+﻿@model SchoolManagement.Models.Entity.AccountList
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="row">
+    <div class="box box-block bg-white col-md-6">
+
+
+        <h5 class="text-danger">Delete Confirm</h5>
+        <div>
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.AccountGroup.Name)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.AccountGroup.Name)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Name)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Name)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.OpeningBalance)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.OpeningBalance)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.CurrentBalance)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.CurrentBalance)
+                </dd>
+
+            </dl>
+
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="form-actions">
+                    <input type="submit" value="Delete" class="btn btn-danger" />
+
+                </div>
+            }
+        </div>
+
+    </div>
+</div>
+<div>
+    @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-warning" })
+</div>
+
+
+
+

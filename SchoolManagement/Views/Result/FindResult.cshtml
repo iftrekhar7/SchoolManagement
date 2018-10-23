@@ -1,0 +1,188 @@
+﻿@model IEnumerable<SchoolManagement.Models.ViewModels.StudentResultVM>
+@{
+    ViewBag.Title = "FindResult";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+    <div class="page-header">
+        <h1>
+            Search Student Result
+        </h1>
+    </div><!-- /.page-header -->
+    <div class="box box-block bg-white m-b-0">
+
+        @using (Html.BeginForm())
+        {
+            <div class="form-inline">
+                Session @Html.DropDownList("SessionId", null, "--Select--", new { @class = "form-control selectpicker", @style = "width:150px;" })
+                Class @Html.DropDownList("StudentClassId", null, "--Select--", new { @class = "form-control selectpicker", @style = "width:150px;" })
+                Roll @Html.DropDownList("AssignRollId", null, "--Select--", new { @class = "form-control selectpicker", @style = "width:150px;" })
+                <input type="submit" value="Search" class="btn btn-primary" />
+            </div>
+        }
+    </div>
+    <div id="divToPrint">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Student Info</h3>
+            </div>
+            <div class="panel-body">
+                <table class="table table-bordered table-hover">
+
+                    @if (Model != null)
+                    {
+                        foreach (var data in Model)
+                        {
+                            foreach (var item in data.StudentInfoVM)
+                            {
+                                <tr>
+                                    <th>Student Name:</th>
+                                    <td colspan="3">@item.StudentName</td>
+                                </tr>
+                                <tr>
+                                    <th>Father Name</th>
+                                    <td colspan="3">@item.FatherName</td>
+                                </tr>
+                                <tr>
+                                    <th>Mother Name:</th>
+                                    <td colspan="3">@item.MotherName</td>
+                                </tr>
+                                <tr>
+                                    <th>Date of Birth</th>
+                                    <td colspan="3">@item.BirtDate</td>
+                                </tr>
+                                <tr>
+                                    <th> Session</th>
+                                    <td> @item.Session</td>
+                                    <th> Shift</th>
+                                    <td>@item.Shift</td>
+                                </tr>
+
+                                <tr>
+                                    <th>Section</th>
+                                    <td>@item.Section</td>
+                                    <th>Group</th>
+                                    <td>@item.GroupName</td>
+                                </tr>
+                                <tr>
+                                    <th>Class</th>
+                                    <td>@item.ClassName</td>
+                                    <th>Roll</th>
+                                    <td>@item.Roll</td>
+                                </tr>
+                            }
+                        }
+                    }
+                </table>
+
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Student Result</h3>
+            </div>
+            <div class="panel-body">
+                <table class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>Subject Code</th>
+                            <th>Subject Name</th>
+                            <th text-align="Center" colspan=" 3">Marks</th>
+                            <th>Total</th>
+                            <th>Grade</th>
+                        </tr>
+                        <tr>
+                            <th colspan ="2"></th>
+                            <th>Theory</th>
+                            <th>MCQ</th>
+                            <th>Practical</th>
+                            <th colspan="2"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (Model != null)
+                        {
+                            foreach (var item in Model)
+                            {
+                                foreach (var data in item.ResultVM)
+                                {
+                                    <tr>
+                                        <td>@data.SubjectCode</td>
+                                        <td>@data.SubjectName</td>
+                                        <td>@data.Theory</td>
+                                        <td>@data.Mcq</td>
+                                        <td>@data.Practical</td>
+                                        <td>@data.Total</td>
+                                        <td>@data.Grade</td>
+                                    </tr>
+                                }
+
+                            }
+                        }
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+    <button id='print' style='margin-top: 10px; padding: 10px; border: none; text-align: center; background: Green; border-radius: 4px; color: #fff; font-weight: bold; cursor: pointer;'>PRINT Result</button>
+<button aria-expanded="false" data-toggle="tab" onclick="printDiv('divToPrint')" class="btn-new-mail no-border">
+    <span class="btn btn-purple no-border">
+        <i class="ace-icon fa fa-print bigger-130"></i>
+        <span class="bigger-110">Print Result</span>
+    </span>
+</button>
+
+
+
+
+
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.print/1.5.1/jQuery.print.js"></script>
+        <script src="~/Scripts/print.min.js"></script>
+        <link href="~/Scripts/print.min.css" rel="stylesheet" />
+        <script language="javascript" type="text/javascript">
+
+            $(function () {
+                $('#print').on('click', function () {
+                    $.print("#divToPrint");
+                });
+            });
+            function printDiv(divName) {
+                var printContents = document.getElementById(divName).innerHTML;
+                var originalContents = document.body.innerHTML;
+
+                document.body.innerHTML = printContents;
+
+                window.print();
+
+                document.body.innerHTML = originalContents;
+            }
+
+            $("#StudentClassId").change(function () {
+                $.ajax({
+                    type: "GET",
+                    url: "/Common/GetRoll",
+                    data: { session: $('#SessionId').val(), studentClass: $('#StudentClassId').val() },
+                    datatype: "json",
+                    traditional: true,
+                    success: function (data) {
+                        $("#AssignRollId").empty();
+                        $.each(data, function (index, row) {
+
+                            $("#AssignRollId").append("<Option value='" + row.Id + "'>" + row.Roll + "</Option>")
+
+                        });
+
+                    }
+                });
+            });
+</script>
+    }
+
+
+
+

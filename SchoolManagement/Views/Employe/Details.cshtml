@@ -1,0 +1,567 @@
+﻿@model SchoolManagement.Models.ViewModels.EmployeeVM
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="page-header">
+    <h1>
+        Employees Info
+        <small>
+            <i class="ace-icon fa fa-angle-double-right"></i>
+            <button type="button" class="btn btn-sm pull-right bg-orange waves-effect" onclick="window.location = '@Url.Action("Index", "Employe")'">
+                <i class="material-icons"></i><span>Back To List</span>
+            </button>
+            <button type="button" class="btn btn-sm pull-right bg-orange waves-effect" onclick="window.location = '@Url.Action("PrintEmployee", "Employe", new { id = Model.Id })'">
+                <i class="material-icons"></i><span>Print Details</span>
+            </button>
+        </small>
+    </h1>
+</div>
+            
+<div class="row">
+    <div class="col-xs-12 col-sm-2">
+        <div class="text-center">
+            @if (Model.Image != null)
+            {
+                var base64 = Convert.ToBase64String(Model.Image);
+                var imgSrc = String.Format("data:image/gif;base64,{0}", base64);
+                <img height="150" class="thumbnail inline no-margin-bottom" alt="Domain Owner's Avatar" src='@imgSrc' />
+            }
+            else
+            {
+                <img class="col-lg-offset-3" src="~/Content/images/person.png" style="max-width: 150px; max-height: 150px;" />
+            }
+                                                    
+            <br />
+            <div class="width-80 label label-info label-xlg arrowed-in arrowed-in-right">
+                <div class="inline position-relative">
+                    <a class="user-title-label" href="#">
+                        <i class="ace-icon fa fa-circle light-green"></i>
+                        &nbsp;
+                        <span class="white">@Model.Name</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-7">
+        <div class="space visible-xs"></div>
+
+        <div class="profile-user-info profile-user-info-striped">
+            <div class="profile-info-row">
+                <div class="profile-info-name"> Username </div>
+
+                <div class="profile-info-value">
+                    <span>@Model.UserName</span>
+                </div>
+            </div>
+            <div class="profile-info-row">
+                <div class="profile-info-name"> Father Name </div>
+
+                <div class="profile-info-value">
+                    <span>@Model.FatherName</span>
+                </div>
+            </div>
+            <div class="profile-info-row">
+                <div class="profile-info-name"> Mother Name </div>
+
+                <div class="profile-info-value">
+                    <span>@Model.MotherName</span>
+                </div>
+            </div>
+            <div class="profile-info-row">
+                <div class="profile-info-name"> Date of Birth </div>
+
+                <div class="profile-info-value">
+                    <span>@Model.DOB</span>
+                </div>
+            </div>
+            <div class="profile-info-row">
+                <div class="profile-info-name"> Gender </div>
+
+                <div class="profile-info-value">
+                    <span>@Model.Gender</span>
+                </div>
+            </div>
+            <div class="profile-info-row">
+                <div class="profile-info-name"> Marital Status </div>
+
+                <div class="profile-info-value">
+                    <span>@Model.MaritalStatus</span>
+                </div>
+            </div>
+            <div class="profile-info-row">
+                <div class="profile-info-name"> Religion </div>
+
+                <div class="profile-info-value">
+                    <span>@Model.Religion</span>
+                </div>
+            </div>
+            <div class="profile-info-row">
+                <div class="profile-info-name"> Nationality </div>
+
+                <div class="profile-info-value">
+                    <span>@Model.Nationality</span>
+                </div>
+            </div>
+            <div class="profile-info-row">
+                <div class="profile-info-name"> National ID No </div>
+
+                <div class="profile-info-value">
+                    <span>@Model.NID</span>
+                </div>
+            </div>
+            <div class="profile-info-row">
+                <div class="profile-info-name"> Present Address </div>
+
+                <div class="profile-info-value">
+                    <i class="fa fa-map-marker light-orange bigger-110"></i>
+                    <span>@Model.PresentAddress</span>
+                </div>
+            </div>
+            <div class="profile-info-row">
+                <div class="profile-info-name"> Permanent Address </div>
+
+                <div class="profile-info-value">
+                    <i class="fa fa-map-marker light-orange bigger-110"></i>
+                    <span>@Model.PermanentAddress</span>
+                </div>
+            </div>
+            <div class="profile-info-row">
+                <div class="profile-info-name"> Age </div>
+
+                <div class="profile-info-value">
+                    <span>38</span>
+                </div>
+            </div>
+
+            <div class="profile-info-row">
+                <div class="profile-info-name">Email</div>
+
+                <div class="profile-info-value">
+                    <span>@Model.Email</span>
+                </div>
+            </div>
+
+            <div class="profile-info-row">
+                <div class="profile-info-name">Phone </div>
+
+                <div class="profile-info-value">
+                    <span>@Model.Phone</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Add or Update Employee education</h3>
+    </div>
+    <div class="panel-body">
+
+        @using (Html.BeginForm("CreateEducation", "Employe", FormMethod.Post))
+        {
+            @Html.Hidden("Id")
+            @Html.AntiForgeryToken()
+            <div class="form-horizontal">
+                <div class="row clearfix">
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
+                        @Html.LabelFor(model => model.EducationLevelId, "Education Level")
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
+                        <div class="form-group">
+                                @Html.DropDownList("EducationLevelId", null, "--Select--", htmlAttributes: new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.EducationLevelId, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
+                        @Html.LabelFor(model => model.ExamTitleId, "Exam Title")
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
+                        <div class="form-group">
+                                @Html.DropDownList("ExamTitleId", null, "--Select--", htmlAttributes: new { @class = "form-control" })
+                          
+                            @Html.ValidationMessageFor(model => model.ExamTitleId, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
+                        @Html.LabelFor(model => model.Major, "Major")
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
+                        <div class="form-group">
+                                @Html.TextBoxFor(model => model.Major, null, new { @class = "form-control" })
+                         
+                            @Html.ValidationMessageFor(model => model.Major, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
+                        @Html.LabelFor(model => model.InstituteName, "Institute Name")
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
+                        <div class="form-group">
+                                @Html.TextBoxFor(model => model.InstituteName, null, new { @class = "form-control datepicker datemask" })
+                            
+                            @Html.ValidationMessageFor(model => model.InstituteName, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
+                        @Html.LabelFor(model => model.ResultType, "Result Type")
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
+                        <div class="form-group">
+                                @Html.EnumDropDownListFor(model => model.ResultType, "--Select--", htmlAttributes: new { @class = "form-control" })
+                            
+                            @Html.ValidationMessageFor(model => model.ResultType, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
+                        @Html.LabelFor(model => model.Marks, "Marks", new { id = "lblMarks", @style = "display:none;" })
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
+                        <div class="form-group">
+                                @Html.TextBoxFor(model => model.Marks, null, new { id = "txtMarks", @class = "form-control", @style = "display:none;" })
+                            @Html.ValidationMessageFor(model => model.Marks, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
+                        @Html.LabelFor(model => model.CGPA, "CGPA", new { id = "lblCgpa", @style = "display:none;" })
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
+                        <div class="form-group">
+                                @Html.TextBoxFor(model => model.CGPA, null, new { id = "txtCgpa", @class = "form-control", @style = "display:none;" })
+                           @Html.ValidationMessageFor(model => model.CGPA, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
+                        @Html.LabelFor(model => model.Scale, "Scale", new {id = "lblScale", @style = "display:none;" })
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
+                        <div class="form-group">
+                                @Html.TextBoxFor(model => model.Scale, null, new { id = "txtScale", @class = "form-control percentage", style = "display:none;" })
+                            @Html.ValidationMessageFor(model => model.Scale, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
+                        @Html.LabelFor(model => model.PassingYear, "Passing Year")
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
+                        <div class="form-group">
+                                @Html.TextBoxFor(model => model.PassingYear, null, new { @class = "form-control percentage" })
+                            @Html.ValidationMessageFor(model => model.PassingYear, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
+                        @Html.LabelFor(model => model.Duration, "Duration")
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
+                        <div class="form-group">
+                                @Html.TextBoxFor(model => model.Duration, null, new { @class = "form-control percentage" })
+                            @Html.ValidationMessageFor(model => model.Duration, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
+                        @Html.LabelFor(model => model.Achievement, "Achievement")
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
+                        <div class="form-group">
+                                @Html.TextBoxFor(model => model.Achievement, null, new { @class = "form-control percentage" })
+                            @Html.ValidationMessageFor(model => model.Achievement, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-4 col-xs-offset-5">
+                    <button type="submit" class="btn btn-success m-t-15 waves-effect">Save</button>
+                </div>
+            </div>
+
+
+
+        }
+
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>Education Level</th>
+                    <th>Exam Title</th>
+                    <th>Major</th>
+                    <th>Institute Name</th>
+                    <th>Result Type</th>
+                    <th>Result</th>
+                    <th>PassingYear</th>
+                    <th>Duration</th>
+                    <th>Achievement</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.EmployeeEducation != null)
+                {
+                    foreach (var item in Model.EmployeeEducation)
+                    {
+                        <tr>
+                            <td>@item.EducationLevel.EducationLevelNaame</td>
+                            <td>@item.ExamTitle.TitleName</td>
+                            <td>@item.Major</td>
+                            <td>@item.InstituteName</td>
+                            <td>@item.ResultType</td>
+                            <td>@if(item.Scale != 0)
+                                    {@item.CGPA }
+                                else {@item.Marks }
+                            </td>
+                            <td>@item.PassingYear</td>
+                            <td>@item.Duration</td>
+                            <td>@item.Achievement</td>
+                            <td>
+                                @Html.ActionLink("Edit", "Edit", "EmployeeEducations", new { id = item.Id }, new { @class = "btn bg-green btn-sm" })
+                                @Html.ActionLink("Delete", "Delete", "EmployeeEducations", new { id = item.Id }, new { @class = "btn btn-danger btn-sm", @onclick = "return confirm('Are you sure you wish to delete this item?');" })
+                            </td>
+                        </tr>
+                    }
+                }
+
+            </tbody>
+        </table>
+
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Add or Update Employment History</h3>
+    </div>
+    <div class="panel-body">
+
+        @using (Html.BeginForm("CreateEmployment", "Employe", FormMethod.Post))
+        {
+            @Html.Hidden("Id")
+            @Html.AntiForgeryToken()
+            <div class="form-horizontal">
+
+                <div class="row clearfix">
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
+                        @Html.LabelFor(model => model.CompanyName, "Company Name")
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
+                        <div class="form-group">
+                                @Html.TextBoxFor(model => model.CompanyName, null, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.CompanyName, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
+                        @Html.LabelFor(model => model.CompanyLocation, "Company Location")
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
+                        <div class="form-group">
+                                @Html.TextBoxFor(model => model.CompanyLocation, null, new { @class = "form-control" })
+                           @Html.ValidationMessageFor(model => model.CompanyLocation, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
+                        @Html.LabelFor(model => model.Designation, "Designation")
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
+                        <div class="form-group">
+                                @Html.TextBoxFor(model => model.Designation, null, new { @class = "form-control" })
+                           @Html.ValidationMessageFor(model => model.Designation, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
+                        @Html.LabelFor(model => model.From, "From")
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
+                        <div class="form-group">
+                                @Html.TextBoxFor(model => model.From, null, new { @class = "form-control datepicker datemask" })
+                           @Html.ValidationMessageFor(model => model.From, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row clearfix">
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
+                        @Html.LabelFor(model => model.To, "To")
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
+                        <div class="form-group">
+                                @Html.TextBoxFor(model => model.To, null, new { @class = "form-control datepicker datemask" })
+                            @Html.ValidationMessageFor(model => model.To, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row clearfix">
+                <div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-4 col-xs-offset-5">
+                    <button type="submit" class="btn btn-success m-t-15 waves-effect">Save</button>
+                </div>
+            </div>
+
+
+
+        }
+
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>Company Name</th>
+                    <th>Company Location</th>
+                    <th>Designation</th>
+                    <th>From</th>
+                    <th>To</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.EmployeeEducation != null)
+                {
+                    foreach (var item in Model.EmploymentHistory)
+                    {
+                        <tr>
+                            <td>@item.CompanyName</td>
+                            <td>@item.CompanyLocation</td>
+                            <td>@item.Designation</td>
+                            <td>@item.From</td>
+                            <td>@item.To</td>
+                            <td>
+                                @Html.ActionLink("Edit", "Edit", "EmploymentHistories", new { id = item.Id }, new { @class = "btn bg-green btn-sm" })
+                                @Html.ActionLink("Delete", "Delete", "EmploymentHistories", new { id = item.Id }, new { @class = "btn btn-danger btn-sm", @onclick = "return confirm('Are you sure you wish to delete this item?');" })
+                            </td>
+                        </tr>
+                    }
+                }
+
+            </tbody>
+        </table>
+
+
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Current Job Information</h3>
+    </div>
+    <div class="panel-body">
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>Designation</th>
+                    <th>Date of Join</th>
+                    <th>Salary</th>
+                    <th>Total Leave</th>
+                    <th>Appointment Letter</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.JobInfo != null)
+                {
+                    foreach (var item in Model.JobInfo)
+                    {
+                        <tr>
+                            <td>@item.DesignationId</td>
+                            <td>@item.DOJ</td>
+                            <td>@item.Salary</td>
+                            <td>@item.TotalLeave</td>
+                            <td>
+                                @Html.ActionLink("Edit", "Edit", "JobInfoes", new { id = item.Id }, new { @class = "btn bg-green btn-sm" })
+                                </td>
+                        </tr>
+                    }
+                }
+
+            </tbody>
+        </table>
+
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+
+
+    <script>
+
+        $("#EducationLevelId").change(function () {
+            $.ajax({
+                type: "GET",
+                url: "/Common/GetExamTitle",
+                data: { EducationLevel: $('#EducationLevelId').val() },
+                datatype: "json",
+                traditional: true,
+                success: function (data) {
+                    $("#ExamTitleId").empty();
+                    $.each(data, function (index, row) {
+
+                        $("#ExamTitleId").append("<Option value='" + row.Id + "'>" + row.Name + "</Option>")
+
+                    });
+
+                }
+            });
+        });
+        $("#ResultType").change(function () {
+            var resultType =  $("#ResultType option:selected").text();
+            console.log(resultType);
+            if(resultType == "Grade")
+            {
+                console.log("g");
+                $('#lblCgpa').show(); $('#lblScale').show(); $('#txtCgpa').show(); $('#txtScale').show();
+                $('#lblMarks').hide(); $('#txtMarks').hide();
+               
+            }
+            else if(resultType == "First Division" || "Second Division" || "Third Division" )
+            {
+                console.log("d");
+                $('#lblMarks').show(); $('#txtMarks').show();
+                $('#lblCgpa').hide(); $('#lblScale').hide(); $('#txtCgpa').hide(); $('#txtScale').hide();
+            }
+            else 
+            { console.log("o");
+                $('#lblMarks').hide(); $('#txtMarks').hide();$('#lblCgpa').hide(); $('#lblScale').hide(); $('#txtCgpa').hide(); $('#txtScale').hide();
+            }
+           
+        });
+    </script>
+
+}
+
+
+
+
+
+
+
+
+
+

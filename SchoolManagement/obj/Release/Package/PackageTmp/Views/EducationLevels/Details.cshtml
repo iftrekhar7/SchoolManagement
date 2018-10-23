@@ -1,0 +1,29 @@
+﻿@model SchoolManagement.Models.Entity.EducationLevel
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="page-header">
+    <h1>
+        Details of a Education Level
+        <small>
+            <i class="ace-icon fa fa-angle-double-right"></i>
+            @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+            @Html.ActionLink("Back to List", "Index")
+        </small>
+    </h1>
+</div>
+
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.EducationLevelNaame)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EducationLevelNaame)
+        </dd>
+
+    </dl>
+</div>
